@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>How to choose the best milk in China?</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./echarts.min.js"></script>
+  <script id="insert"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div id="head">
+      <h1>How to choose the best milk in China?</h1>
+      <hr>
+      <p>
+        Data visualisation of 100 best-selling UHT milk products on one of the most massive online retailers in China: <a href="https://en.wikipedia.org/wiki/JD.com" target="_blank">JD.com</a>
+      </p>
+      <br>
+      <br>
+    </div>
+
+    <div id="graph1">
+      <div id="pri-nut" style="width: 800px;height:500px;"></div>
+      <p class="footnote">*10 CNY &#8776; 2 AUD</p>
+      <p>
+        Try different nutrition facts (y-axis):
+        <button onclick="changeNutrition('protein')">Protein</button>
+        <button onclick="changeNutrition('calcium')">Calcium</button> , to see the relationships between nutritions and prices.
+      </p>
+      <p>
+        Try difference attributes (color map):
+        <button onclick="setSalesRank()">Sales Rank</button>
+        <button onclick="setOrigin()">Country of Origin</button>
+        <button onclick="setOrganic()">Organic/Non-organic</button>
+        <button onclick="setPack()">Pack</button>
+        <button onclick="setFat()">Fat</button> , to see what kind of milk has a low price and hign nutrition facts.      
+      </p>
+      <p>
+        Click on the pies to filter the products. Click any attribute to cancel the filter.
+      </p>
+    </div>
+    <hr>
+
+    <div id="graph2">
+      <div class="pies" id="origin" style="width: 400px;height:300px;"></div>
+      <div class="pies" id="organic" style="width: 400px;height:300px;"></div>
+    </div>
+    
+    <div id="graph3">
+      <div class="pies" id="pack" style="width: 400px;height:300px;"></div>
+      <div class="pies" id="fat" style="width: 400px;height:300px;"></div>
+    </div>
+  </div>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- script -->
+  <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>

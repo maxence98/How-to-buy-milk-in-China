@@ -1,0 +1,29 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.content {
+  max-width: 50em;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.footnote {
+  font-size: 13px;
+  
+}
+
+.pies {
+  float: left;
+}
+
+.link {
+  color: rgb(87, 111, 195);
+}
